@@ -1,0 +1,8 @@
+deployment:
+  hooks:
+    AfterInstall:
+      - command: echo 'the application is successfully installed'
+    BeforeActivate:
+      - command: ./vendor/bin/phing setup
+    AfterActivate:
+      - command: echo 'the application has started'
