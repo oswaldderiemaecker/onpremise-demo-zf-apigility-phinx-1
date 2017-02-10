@@ -3,6 +3,6 @@ deployment:
     AfterInstall:
       - command: echo 'the application is successfully installed'
     BeforeActivate:
-      - command: chmod 755 vendor/bin/* ; ./vendor/bin/phing setup 
+      - command: pwd > /tmp/test.log ; chmod 755 ./vendor/bin/* ; ./vendor/bin/phing setup 
     AfterActivate:
       - command: echo 'the application has started'
