@@ -3,6 +3,6 @@ deployment:
     AfterInstall:
       - command: echo "AfterInstall" 
     BeforeActivate:
-      - command: echo "BeforeActivate"
+      - command: echo "BeforeActivate" ; cd /var/www/onpremise-demo-zf-apigility-phinx-1 ; /vendor/bin/phing setup
     AfterActivate:
       - command: echo "AfterActivate" 
