@@ -1,8 +1,8 @@
 deployment:
   hooks:
     AfterInstall:
-      - command: echo "afterinstall" >> /tmp/test.log ; pwd >> /tmp/test.log ; id >> /tmp/test.log ; sudo chmod 755 ./vendor/bin/* 
+      - command: echo "afterinstall" 
     BeforeActivate:
-      - command: echo "beforeactivate" >> /tmp/test.log ; pwd >> /tmp/test.log ; id >> /tmp/test.log ; sudo chmod 755 ./vendor/bin/*
+      - command: echo "beforeactivate"
     AfterActivate:
       - command: echo "afteractivate" >> /tmp/test.log ; pwd >> /tmp/test.log ; id >> /tmp/test.log ; sudo chmod 755 ./vendor/bin/*
